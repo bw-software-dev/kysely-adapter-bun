@@ -27,7 +27,7 @@
 	"license": "MIT",
 	"packageManager": "bun@1.2.0",
 	"scripts": {
-		"build": "bun run scripts/build.ts",
+		"build": "bun run format && bun run scripts/build.ts",
 		"format": "bunx biome format --write",
 		"publish": "bun run build && bun publish",
 		"lint": "bunx biome lint",
