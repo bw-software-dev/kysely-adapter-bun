@@ -7,5 +7,5 @@ await Bun.build({
 	outdir: "dist",
 	packages: "external",
 	sourcemap: "linked",
-	plugins: [dts({ output: {} })],
+	plugins: [dts({ output: { noBanner: true } })],
 });
