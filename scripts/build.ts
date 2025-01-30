@@ -5,7 +5,6 @@ await Bun.build({
 	target: "bun",
 	minify: true,
 	outdir: "dist",
-	bytecode: true,
 	packages: "external",
 	sourcemap: "linked",
 	plugins: [dts({ output: {} })],
