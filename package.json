@@ -1,36 +1,10 @@
 {
   "name": "kysely-adapter-bun",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "A Kysely adapter to support Bun 1.2's new SQL client",
-  "repository": "https://github.com/bw-software-dev/kysely-adapter-bun.git",
-  "homepage": "https://github.com/bw-software-dev/kysely-adapter-bun",
+  "version": "0.0.2",
   "author": "Ben Wright <benwboston@gmail.com>",
-  "license": "MIT",
-  "packageManager": "bun@1.2.0",
+  "repository": "https://github.com/bw-software-dev/kysely-adapter-bun.git",
   "main": "src/index.js",
   "module": "src/index.js",
-  "sideEffects": false,
-  "keywords": [
-    "kysely",
-    "sql",
-    "bun",
-    "postgres"
-  ],
-  "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.js"
-  },
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "bun run scripts/build.ts",
-    "format": "bunx biome format --write",
-    "lint": "bunx biome lint",
-    "test": "bun test"
-  },
   "devDependencies": {
     "@types/bun": "latest",
     "biome": "^0.3.3",
@@ -41,5 +15,31 @@
   "peerDependencies": {
     "kysely": ">=0.27.5",
     "bun": ">=1.2.0"
-  }
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "description": "A Kysely adapter to support Bun 1.2's new SQL client",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/bw-software-dev/kysely-adapter-bun",
+  "keywords": [
+    "kysely",
+    "sql",
+    "bun",
+    "postgres"
+  ],
+  "license": "MIT",
+  "packageManager": "bun@1.2.0",
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "format": "bunx biome format --write",
+    "lint": "bunx biome lint",
+    "test": "bun test"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts"
 }
